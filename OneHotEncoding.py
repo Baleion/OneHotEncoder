@@ -16,7 +16,9 @@ import numpy as np
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 
+
 def encode(train, test):
+    '''This function encodes the labels for the train and test sets as long as they are dataframes'''
     le = LabelEncoder().fit(train.species)
     ohe = OneHotEncoder()
     labels_le = le.transform(train.species)
