@@ -12,7 +12,7 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 import pandas as pd
 import numpy as np
 
-#Get the leaf data
+# Get the leaf data 
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 
